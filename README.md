@@ -1,33 +1,32 @@
 # simple-calculator
-def calculate():
-    print("\nSimple Calculator")
-    print("Operations: +  -  *  /")
+This is a basic calculator built using Python. It performs simple arithmetic operations.
 
-    try:
-        num1 = float(input("Enter first number: "))
-        operator = input("Enter operator: ")
-        num2 = float(input("Enter second number: "))
+## Features
 
-        if operator == "+":
-            print("Result:", num1 + num2)
-        elif operator == "-":
-            print("Result:", num1 - num2)
-        elif operator == "*":
-            print("Result:", num1 * num2)
-        elif operator == "/":
-            if num2 == 0:
-                print("Error: Division by zero")
-            else:
-                print("Result:", num1 / num2)
-        else:
-            print("Invalid operator")
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Error handling
+* Continuous calculations (loop)
 
-    except ValueError:
-        print("Invalid input! Please enter numbers only.")
+##  How to Run
 
-while True:
-    calculate()
-    again = input("\nDo you want to calculate again? (y/n): ").lower()
-    if again != 'y':
-        print("Goodbye 👋")
-        break
+1. Make sure Python is installed
+2. Run the file:
+   python calculator.py
+
+##  Example
+
+Enter first number: 10
+Enter operator: *
+Enter second number: 5
+Result: 50
+
+##  Built With
+
+* Python
+
+## Author
+
+Javan Otieno
